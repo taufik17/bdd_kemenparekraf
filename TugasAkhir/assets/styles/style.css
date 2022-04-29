@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+.jasa {
+    overflow: auto;
+}
+
+h2 {
+    color: #00C897
+}
+
+h3 {
+    color: #00C897
+}
+
+header {
+    display: inline;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 100px;
+    border-radius: 50%;
+    max-height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.p_digital {
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.produk {
+    padding-top: 20px;
+}
+
+.jasa {
+    padding-top: 20px;
+}
+
+.card {
+    border-radius: 5px;
+}
+
+#content>.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding-bottom: 40px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#content>.card>.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+}
+
+aside>.card {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00C897;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: #019267;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.table-aside {
+    text-align: left;
+}
+
+td {
+    padding-bottom: 10px;
+}
+
+td a {
+    text-decoration: none;
+    color: #291821;
+}
+
+.column a {
+    text-decoration: none;
+}
+
+.column-jasa a {
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00C897;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+}
+
+.column-jasa {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 300px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* ------------------------------------ */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}

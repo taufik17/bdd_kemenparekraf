@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tugas Akhir</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <script src="https://kit.fontawesome.com/154f24aaca.js" crossorigin="anonymous"></script>
+    <meta name="viwport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron bg-image">
+            <h1>Taufik.Dev</h1>
+            <b>Produk Digital, Jasa Pembuatan Aplikasi dan Konsultasi</b>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#produk">Produk Digital</a></li>
+                <li><a href="#jasa">Jasa Aplikasi</a></li>
+                <li><a href="#konsultasi">Konsultasi</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+            <article id="produk" class="card">
+                <h2>Produk Digital</h2>
+                <div class="row produk">
+                    <div class="column">
+                        <a href="#0">
+                            <div class="card">
+                                <img class="p_digital" src="assets/image/pulsa.png" alt="Pulsa">
+                                <div class="container">
+                                    <h4><b>Pulsa</b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="column">
+                        <a href="#0">
+                            <div class="card">
+                                <img class="p_digital" src="assets/image/lightning.png" alt="PLN">
+                                <div class="container">
+                                    <h4><b>PLN</b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="column">
+                        <a href="#0">
+                            <div class="card">
+                                <img class="p_digital" src="assets/image/game.png" alt="Game">
+                                <div class="container">
+                                    <h4><b>Voucher Game</b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="column">
+                        <a href="#0">
+                            <div class="card">
+                                <img class="p_digital" src="assets/image/ticket.png" alt="Tiket">
+                                <div class="container">
+                                    <h4><b>Tiket</b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="column">
+                        <a href="#0">
+                            <div class="card">
+                                <img class="p_digital" src="assets/image/dompet.png" alt="Dompet Digital">
+                                <div class="container">
+                                    <h4><b>Dompet Digital</b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article id="jasa" class="card">
+                <h2>Jasa Pembuatan Aplikasi</h2>
+                <em>Berikut Ini Katalog Alikasinya</em>
+                <div class="row jasa">
+
+                    <div class="column-jasa">
+                        <a href="#0" onclick='document.getElementById("penjelasan").innerHTML = `<hr>
+                            <div style="background-color: #f1f1f1;">
+                                <p style="padding:15px; margin:0px;">Pengembangan Aplikasi Berbasis Web, dikembangkan sesuai kebutuhan, dapat menggunakan cms ataupun framework tertentu, desain responsif</p>
+                            </div>`'>
+                            <div class="card">
+                                <img class="p_digital" src="assets/image/web.png" alt="Web Dev">
+                                <div class="container">
+                                    <h4><b>Website</b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="column-jasa">
+                        <a href="#0" onclick='document.getElementById("penjelasan").innerHTML = `<hr>
+                            <div style="background-color: #f1f1f1;">
+                                <p style="padding:15px; margin:0px;">Pengembangan Aplikasi Berbasis Mobile, dikembangkan secara native maupun framework guna pengoptimalan apps.</p>
+                            </div>`'>
+                            <div class="card">
+                                <img class="p_digital" src="assets/image/mobdev.png" alt="Mobile Dev">
+                                <div class="container">
+                                    <h4><b>Mobile</b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="column-jasa">
+                        <a href="#0" onclick='document.getElementById("penjelasan").innerHTML = `<hr>
+                            <div style="background-color: #f1f1f1;">
+                                <p style="padding:15px; margin:0px;">Pengembangan Aplikasi Game, dikembangkan menggunakan unity 3d.</p>
+                            </div>`'>
+                            <div class="card">
+                                <img class="p_digital" src="assets/image/gamedev.png" alt="Game Dev">
+                                <div class="container">
+                                    <h4><b>Game</b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="column-jasa">
+                        <a href="#0" onclick='document.getElementById("penjelasan").innerHTML = `<hr>
+                        <div style="background-color: #f1f1f1;">
+                            <p style="padding:15px; margin:0px;">Pengembangan Aplikasi Berbasis Desktop, dikembangkan menggunakan framework electron. Hasil file berbentuk installer .exe</p>
+                        </div>`'>
+                            <div class="card">
+                                <img class="p_digital" src="assets/image/deskdev.png" alt="Desktop Dev">
+                                <div class="container">
+                                    <h4><b>Desktop</b></h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="penjelasan">
+                        <hr>
+                    </div>
+
+                </div>
+            </article>
+
+            <article id="konsultasi" class="card">
+                <h2>Konsultasi IT</h2>
+                <form action="">
+                    <label>Nama:</label><br>
+                    <input type="text" id="nama" name="nama" placeholder="Nama"><br>
+                    <label>Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Email"><br><br>
+                    <textarea name="" id="" cols="120" rows="10"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </article>
+
+        </div>
+
+        <aside>
+            <article class="profile card" id="tentang">
+                <header>
+                    <h2>Taufik Agung Santoso</h2>
+                    <figure>
+                        <img src="assets/image/taufik.png">
+                        <figcaption>Junior Web Developer</figcaption>
+                    </figure>
+                </header>
+                <section>
+                    <h3>Informasi Lainnya</h3>
+                    <table class="table-aside">
+                        <tr>
+                            <th><i class="fa-solid fa-user" style="color: #00C897"></i></th>
+                            <td>Taufik Agung Santoso</td>
+                        </tr>
+                        <tr>
+                            <th><i class="fa-solid fa-envelope" style="color: #00C897"></i></th>
+                            <td>
+                                <a href="mailto: taufikagungsantoso17@gmail.com">taufikagungsantoso17@gmail.com</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><i class="fa-solid fa-phone" style="color: #00C897"></i></th>
+                            <td><a href="https://api.whatsapp.com/send?phone=085159233917">+628 5159 2339 17</a></td>
+                        </tr>
+                        <tr>
+                            <th><i class="fa-solid fa-map" style="color: #00C897"></i></th>
+                            <td>Bandar Lampung, Lampung</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+
+
+    </main>
+
+    <footer>
+        <p>Belajar Dasar Pemrograman Web &#169; 2022, Dicoding Academy</p>
+    </footer>
+
+</body>
+
+<script>
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+</html>
